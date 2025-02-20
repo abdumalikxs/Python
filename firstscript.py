@@ -3,5 +3,5 @@ def multiplier(a, b):
 
 
 a = multiplier(2, 3)
-
-print(a)
+b = multiplier(4, 5)
+print(multiplier(a, b))
