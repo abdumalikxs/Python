@@ -1,6 +1,6 @@
-def length(word):
+def lengtho(word):
     return len(word)
 
 
-a = length('human')
+a = lengtho('human')
 print(a)
