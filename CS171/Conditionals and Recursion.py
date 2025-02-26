@@ -1,3 +1,4 @@
+from time import time, sleep
 a = -11 and True
 print(a)
 
@@ -64,3 +65,35 @@ def countdown_by_two(n):
 
 countdown_by_two(6)
 countdown_by_two(5)
+print('')
+########
+
+
+def starter():
+    while True:
+        now = time()
+        years = now // (60 * 60 * 24 * 365)
+        r = now % (60 * 60 * 24 * 365)
+        days = r // (60 * 60 * 24)
+        rr = r % (60 * 60 * 24)
+        hours = rr // (60 * 60) - 5
+        rrr = rr % (60 * 60)
+        minutes = rrr // 60
+        seconds = rrr - (minutes * 60)
+
+        print(f"{int(years)} years, {int(days)} days, {int(hours)} hours, {int(minutes)} minutes, {int(seconds)} seconds.", end="\r")
+        sleep(1)
+
+######
+
+
+def is_triangle(a, b, c):
+    if a + b <= c or b + c <= a or c + a <= b:
+        print('No')
+    else:
+        print("Yes")
+
+
+is_triangle(5, 5, 100)
+
+######
